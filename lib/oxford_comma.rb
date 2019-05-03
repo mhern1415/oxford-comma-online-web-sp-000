@@ -1,13 +1,4 @@
 
-
-def oxford_comma(array)
-  if array.length == 1 
-    return "#{array[0]}"
-  elsif array.length == 2 
-    return array.join(" and ")
-    
-end
-
 def oxford_comma(array)
   if array.length == 1
     return "#{array[0]}"
@@ -19,15 +10,3 @@ def oxford_comma(array)
   end
 end
 
-array = ["apple"]
-def oxford_comma(array)
-  if array.length == 2
-  array[-2] << " and "
-  array.join
-  elsif array.length == 1
-  	array.join
-  elsif array.length > 2
-    array[-1].prepend "and "
-	array.join(", ")
-  end
-end
